@@ -13,12 +13,16 @@
 }
 
 * {
+  
   margin:0;
   padding: 0;
   font-family: 'Open sans';
 }
 
-
+html {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
 .header {
   min-height: 100vh;
@@ -45,6 +49,7 @@
   
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 84px;
   position: relative;
   z-index: 2;
   margin: auto;
@@ -58,11 +63,17 @@
 .header_logo {
   fill: #ffffff;
   width: 134px;
- 
+  
   margin-left: auto;
   margin-right: auto;
 }
-
+.logo-text {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  
+}
 .header_slogan {
   display: flex;
   flex-wrap: wrap;
@@ -72,6 +83,8 @@
   text-transform: uppercase;
   margin-top: 137px;
   margin-bottom: 88px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header_slogan_second {
@@ -81,7 +94,7 @@
 
 .buttons {
   font-size: 8px;
-  margin-bottom: 84px;
+  
  }
 
 .download_button {
@@ -90,7 +103,7 @@
   height: 35px;
   background-color: #5e3db3;
   border-radius: 17px;
-  text-decoration: none;
+  
   align-items: center;
   width: 280px;
   margin-left: auto;
@@ -111,16 +124,20 @@
 
 .button_name {
   color: #ffffff;
-  
+  text-decoration: none;
   text-transform: uppercase;
-  padding-left: 1em;
-  margin: 0;
+  margin-left: 1em;
+
   display: block;
 }
 
 .button_name_label {
   margin-top: 0.5em;
   font-weight: bold;
+}
+
+.athlets, .players{
+  padding-top: 25px;
 }
 
 .section_content {
@@ -140,14 +157,14 @@
   text-transform: uppercase;
   color: #e7e7e7;
   padding-left: 20px;
-  padding-top: 25px;
+ 
 }
 
 .person_img {
   max-width: 100%;
   display: flex;
   justify-content: center;
-  
+  margin-bottom: -55px;
 }
 
 .color-grey {
@@ -222,7 +239,7 @@
 }
 
 .description {
-  padding-top: 30px;
+  margin-top: 30px;
   font-size: 15px;
 }
 
@@ -358,15 +375,26 @@
     margin-left: 0;
     margin-right: 0;
     justify-content: center;
+    text-decoration: none;
   }
   .button_name {
     display: flex;
     flex-direction: column;
     text-align: left;
+   
   }
+
   .athlets, .players {
     position: relative;
+    
   }
+  .person_img {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+   
+ }
+    
   .color-grey {
     background-color: #ffffff; 
   }
@@ -374,7 +402,7 @@
     font-size: 80px;
   }
   .section_number {
-    font-size: 18px;
+    font-size: 18pxh;
   }
   .action_title {
     font-size: 80px;
@@ -435,12 +463,16 @@
   }
   .athlets .person_img {
     position: absolute;
-    
+    align-self: center;
+    top: 140px;
+    left: -160px;
     
   }
   .players .person_img {
     position: absolute;
-    
+    align-self: center;
+    top: 70px;
+    right: 0;
   }
   .athlets .section_content {
     padding-left: 43%;
@@ -473,7 +505,7 @@
     left: 32px;
   }
   .action_title {
-    padding-top: 55px;
+    padding-top: 5vh;
   }
   .footer {
     background-image: url("../images/game_1280.jpg");
@@ -543,40 +575,77 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-     padding-left: 1.5em;
+    padding-left: 1.5em;
   }
   .button_name_label {
     margin-top: 5px;
   }
-  .person_title {
-    padding-top: 116px;
-    padding-bottom: 0;
-    padding-right: 192px;
+ .athlets {
+   padding-top: 90px;
+ }
+ .players {
+   overflow: hidden;
+ }
+
+  .athlets .person_title {
+    padding-left: 52%;
   }
-   
+  
+  .players .person_title {
+     padding-top: 100px;
+     padding-left: 171px;
+  }
   
   .athlets .person_img {
     position: absolute;
-    
+    top: 5%;
+    left: 9%;
   }
+  
   .players .person_img {
     position: absolute;
+    padding-left: 43%;
+    padding-top: 30px;
     
+  }
+
+  .section_content {
+    padding-top: 50px;
+    padding-bottom: 56px;
+  }
+   .athlets .section_title {
+    padding-left: 52%;
+  }
+
+  .players .section_title{
+    padding-left: 9%;
   }
   .section_name {
     font-size: 36px;
   }
   .section_number::after {
     content: "";
-    width: 20px;
+    width: 19px;
     height: 5px;
     margin-top: 7px;
   }
-  .description {
+ 
+   
+  .athlets .description {
+    max-width: 39%;
+    padding-left: 52%;
+    font-size: 20px;
+  } 
+  
+  .players .description {
+    max-width: 39%;
+    padding-left: 9%;
     font-size: 20px;
   }
+
   .action-item {
     display: flex;
+    width: 100%;
   }
   .action_img {
     width: 50vw;
@@ -587,23 +656,23 @@
   }
   .action_info {
     display: flex;
-    padding: 0;
     width: 50vw;
-    padding-top: 210px;
+    padding: 0;
   }
+ 
   .action_info:nth-child(2n+1) {
     flex-direction: row-reverse;
   }
   .actions .section_number {
     display: block;
-    padding-left: 70px;
-    padding-top: 62px;
-    width: 167px;
-    height: 155px;
+    padding-left: 3.33vw;
+    padding-top: 3.12vw;
+    height: 8.07vw;
+    width: 8.69vw;
+    top: 11.04vw;
     left: 0;
     right: 0;
     margin: auto;
-    top: 210px;
   }
   .actions .section_number::after {
     content: "";
@@ -612,15 +681,20 @@
     margin-top: 9px;
   }
   .action_content {
-    padding-left: 129px;
-    padding-right: 192px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
+
   .action_content:nth-child(even) {
-    padding-right: 129px;
-    padding-left: 192px;
+    padding-right: 10%;
+    padding-left: 13%;
   }
   .action_title {
     padding-top: 0;
+  }
+
+  .action .description {
+    padding: 0;
   }
   .footer {
     background-image: url("../images/game_1920.jpg");
@@ -631,7 +705,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 152px;
-    margin-top: 230px;
+    
   }
   .footer-logo {
     margin: 0;

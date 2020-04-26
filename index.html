@@ -11,6 +11,7 @@
 <body>
   <header class="header">
     <div class="container">
+     <a href="#" class="header-logo">
       <svg class="header_logo" viewBox="0 0 972 264" xmlns="http://www.w3.org/2000/svg">
         <g fill-rule="evenodd">
           <g fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round">
@@ -24,9 +25,10 @@
             fill-rule="nonzero" />
         </g>
       </svg>
-
+      <span class="logo-text">Surface</span>
+</a> 
       <h1 class="header_slogan">
-        <span class="header_slogan_first">Be recruited</span>
+       Be recruited
         <span class="header_slogan_second">Play college sports</span>
       </h1>
       <div class="buttons">
@@ -58,12 +60,14 @@
       <section class="athlets">
         <h2 class="person_title">Athlets</h2>
         <div class="persons_content">
-          <picture class="person_img">
-            <source media="(min-width: 961px)and (max-width: 1920px) " srcset="images/footballer_566.png">
-            <source media="(min-width: 641) and (max-width: 960)" srcset="images/footballer_497.png">
+        <div class="person_img">
+          <picture class="person_img_athlets">
+            <source media="(min-width: 961px) and (max-width:1920px) " srcset="images/footballer_566.png">
+            <source media="(min-width: 641) and(max-width: 960)" srcset="images/footballer_497.png">
               <source media="(max-width: 640px)" srcset="images/footballer_192.png">
-            <img class="person_img" src="images/footballer_497.png" alt="footballer">
+            <img class="person_images_athlets" src="images/footballer_566.png" alt="footballer">
           </picture>
+          </div>
           <div class="section_content color-grey">
             <div class="section_title">
               <span class="section_number">01</span>
@@ -92,15 +96,18 @@
         </div>
       </section>
       <section class="players">
-        <h2 class="person_title">Players</h2>
-        <div class="persons_content">
-          <picture class="person_img">
+<div class="person_img">
+          <picture class="person_img_players">
             <source media="(min-width: 961px) and (max-width: 1920px)" srcset="images/basketballer_991.png">
             <source media="(min-width: 641) and (max-width: 960)" srcset="images/bsketballer_436.png">
             <source media="(max-width: 640px)" srcset="images/basketballer_302.png">
-            <img class="person_img" src="images/basketballer_302.png" alt="basketballer">
+            <img class="person_images_players" src="images/basketballer_436.png.png" alt="basketballer">
           </picture>
-          <div class="section_content color-grey">
+         </div> 
+
+        <h2 class="person_title">Players</h2>
+        <div class="persons_content">
+            <div class="section_content color-grey">
             <div class="section_title">
               <span class="section_number">01</span>
               <h3 class="section_name">connection</h3>
@@ -125,13 +132,14 @@
         </div>
       </section>
     </article>
-    <aside class="actions">
+    <article class="actions">
       <section class="action-item">
+        
         <picture class="action_img">
           <source media="(min-width: 961px) and (max-width: 1920px)" srcset="images/be-active_1024.jpg">
           <source media="(min-width: 641) and (max-width: 960)" srcset="images/be-active_960.jpg">
           <source media="(max-width: 640px)" srcset="images/be-active_640.jpg">
-          <img class="action_img" src="images/be-active_640.jpg"  alt="Be active">
+          <img src="images/be-active_1024.jpg" class="action_img" alt="Be active">
         </picture>
         <div class="action_info">
           <span class="section_number">01</span>
@@ -146,7 +154,7 @@
           <source media="(min-width: 961px) and (max-width: 1920px)" srcset="images/find-contact_1024.jpg">
           <source media="(min-width: 641) and (max-width: 960)" srcset="images/find-contact_960.jpg">
           <source media="(max-width: 640px)" srcset="images/find-contact_640.jpg">
-          <img src="images/find-contact_640.jpg"  alt="Find contact">
+          <img src="images/find-contact_1024.jpg" class="action_img" alt="Find contact">
         </picture>
         <div class="action_info">
           <span class="section_number">02</span>
@@ -161,7 +169,7 @@
           <source media="(min-width: 961px) and (max-width: 1920px)" srcset="images/work-it_1024.jpg">
           <source media="(min-width: 641) and (max-width: 960)" srcset="images/work-it_960.jpg">
           <source media="(max-width: 640px)" srcset="images/work-it_640.jpg">
-          <img class="action_img" src="images/work-it_640.jpg"  alt="Work it">
+          <img src="images/work-it_1024.jpg" class="action_img" alt="Work it">
         </picture>
         <div class="action_info">
           <span class="section_number">03</span>
@@ -172,7 +180,7 @@
           </div>
         </div>
       </section>
-    </aside>
+    </article>
   </main>
   <footer class="footer">
     <div class="container">
