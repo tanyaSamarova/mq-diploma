@@ -11,9 +11,11 @@
   font-weight: 400;
   font-style: normal;  
 }
-
+ body {
+   min-width: 320px;
+ }
 * {
-  
+  /*min-width: 320px;*/
   margin:0;
   padding: 0;
   font-family: 'Open sans';
@@ -103,11 +105,12 @@ html {
   height: 35px;
   background-color: #5e3db3;
   border-radius: 17px;
-  
+  text-decoration: none;
   align-items: center;
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 80px;
 }
 
 .download_button:nth-child(n+2) {
@@ -119,7 +122,7 @@ html {
   width: 19px;
   height: 18px;
   display: block;
-  padding-left: 82px;
+  /*padding-left: 82px;*/
 }
 
 .button_name {
@@ -281,18 +284,19 @@ html {
   margin-top: 5px;
 }
 
+.action_content {
+  padding-top: 34px;
+  padding-bottom: 78px;
+}
+
 .action_title {
   color: #e7e7e7;
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 34px;
+  /*padding-top: 34px;*/
 }
 
-.actions .description {
-  padding-bottom: 81px;
-  padding-top: 28px;
-}
 
 .footer {
   position: relative;
@@ -356,8 +360,19 @@ html {
   margin-bottom: 58px;
 }
 
+.header_logo_footer {
+  margin-top: 74px;
+}
 
 @media (min-width: 641px) {
+  /*.container {
+    padding-left: 0;
+    padding-right: 0;
+  }*/
+   .download_button {
+     padding-left: 0;
+   }
+
   .buttons {
     display: flex;
     justify-content: center;
@@ -376,12 +391,14 @@ html {
     margin-right: 0;
     justify-content: center;
     text-decoration: none;
+    
+   
   }
   .button_name {
     display: flex;
     flex-direction: column;
     text-align: left;
-   
+    
   }
 
   .athlets, .players {
@@ -392,7 +409,6 @@ html {
     max-width: 100%;
     display: flex;
     justify-content: center;
-   
  }
     
   .color-grey {
@@ -416,13 +432,20 @@ html {
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
+
   .header {
     background-image: url("../images/football_1280.jpg");
     background-position: center;
   }
   .header .container {
+    max-width: 100%;
     padding-top: 37px;
   }
+
+  .header_logo { 
+    width: 225px;
+  }
+
   .header_slogan {
     font-size: 64px;
     margin-left: 90px;
@@ -489,19 +512,20 @@ html {
     padding-top: -20px;
   }
   .description {
-    padding-top: 32px;
+    /*padding-top: 32px;*/
     font-size: 16px;
   }
   .action_info {
     padding-left: 32px;
     padding-right: 32px;
+    position: relative;
 }
   .actions .section_number {
     padding-left: 45px;
     padding-top: 42px;
     width: 116px;
     height: 116px;
-    margin-top: -80px;
+    top: -30px;
     left: 32px;
   }
   .action_title {
@@ -540,8 +564,10 @@ html {
     background-position: center;
   }
   .container {
-    padding-left: 192px;
-    padding-right: 192px;
+    /*padding-left: 192px;
+    padding-right: 192px;*/
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 45px;
    }
   
@@ -593,7 +619,8 @@ html {
   
   .players .person_title {
      padding-top: 100px;
-     padding-left: 171px;
+     padding-left: 9%;
+     margin-bottom: 50px;
   }
   
   .athlets .person_img {
@@ -602,10 +629,10 @@ html {
     left: 9%;
   }
   
-  .players .person_img {
+  .person_img_players{
     position: absolute;
-    padding-left: 43%;
-    padding-top: 30px;
+    left: 43%;
+    top: 20px;
     
   }
 
@@ -656,6 +683,7 @@ html {
   }
   .action_info {
     display: flex;
+    
     width: 50vw;
     padding: 0;
   }
@@ -705,6 +733,7 @@ html {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 152px;
+    width: 880px;
     
   }
   .footer-logo {
