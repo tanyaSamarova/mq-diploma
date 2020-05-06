@@ -15,7 +15,7 @@
    min-width: 320px;
  }
 * {
-  /*min-width: 320px;*/
+ 
   margin:0;
   padding: 0;
   font-family: 'Open sans';
@@ -558,7 +558,7 @@ html {
   
 }
 
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
   .header {
     background-image: url("../images/football_1920.jpg");
     background-position: center;
@@ -569,6 +569,7 @@ html {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 45px;
+    padding-bottom: 193px;
    }
   
   .header_logo {
@@ -587,7 +588,7 @@ html {
   }
   .buttons {
     font-size: 14px;
-    margin-bottom: 109px;
+    /*margin-bottom: 109px;*/
   }
   .logo_button {
     width: 42px;
@@ -601,7 +602,6 @@ html {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-left: 1.5em;
   }
   .button_name_label {
     margin-top: 5px;
@@ -709,8 +709,8 @@ html {
     margin-top: 9px;
   }
   .action_content {
-    margin-top: auto;
-    margin-bottom: auto;
+    padding-top: 19%;
+    padding-bottom: 16%;
   }
 
   .action_content:nth-child(even) {
